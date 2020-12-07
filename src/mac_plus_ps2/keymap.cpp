@@ -1,3 +1,25 @@
+#include <Arduino.h>
+#include "PS2Keyboard.h"
+
+//#define SERIAL_DEBUG
+
+#define NUMPAD  0x0100
+#define NUMPAD2 0x0200
+
+#define PS2_DATA_PIN 3
+#define PS2_CLOCK_PIN 2
+
+#define MAC_DATA_PIN 5
+#define MAC_CLOCK_PIN 6
+
+#define NULL_TRANSITION 0x7b
+#define CAPS_LOCK       0x73
+
+PS2Keyboard keyboard;
+unsigned int scanCodesTable[256];
+unsigned int extScanCodesTable[256];
+
+void initScancodes();
 
 void initScancodes() {
   for (int i = 0; i < 256; i++) {
