@@ -1,5 +1,17 @@
 #include "keymap.cpp"
 
+void waitForInitSignal();
+byte readCmd();
+void inquiry();
+void sendKey(unsigned int key);
+byte readByte();
+void sendByte(byte b);
+unsigned int getKeyTransition();
+unsigned int getExtendedTransition();
+unsigned int translate(byte scanCode, boolean extended, boolean released);
+unsigned int handleCapsLockRelease();
+byte waitForScanCode();
+
 void setup() {
 #ifdef SERIAL_DEBUG
   Serial.begin(9600);

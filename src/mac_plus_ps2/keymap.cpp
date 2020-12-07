@@ -41,8 +41,7 @@ void initScancodes() {
   scanCodesTable[0x45] = 0x3b; // 0)
   scanCodesTable[0x4e] = 0x37; // -_
   scanCodesTable[0x55] = 0x31; // +=
-  scanCodesTable[0x5d] = 0x55; // |\
-  
+  scanCodesTable[0x5d] = 0x55;  
   scanCodesTable[0x0d] = 0x61; // tab
   scanCodesTable[0x15] = 0x19; // q
   scanCodesTable[0x1d] = 0x1b; // w
