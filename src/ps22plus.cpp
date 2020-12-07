@@ -1,4 +1,4 @@
-#include "keymap.cpp"
+#include "keymap.h"
 
 void waitForInitSignal();
 byte readCmd();

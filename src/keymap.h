@@ -1,7 +1,7 @@
 #include <Arduino.h>
 #include "PS2Keyboard.h"
 
-//#define SERIAL_DEBUG
+#define SERIAL_DEBUG
 
 #define NUMPAD  0x0100
 #define NUMPAD2 0x0200
